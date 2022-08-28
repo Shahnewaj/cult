@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "913869900470",
+    "project_id": "cult-c072f",
+    "storage_bucket": "cult-c072f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913869900470:android:6f0b48878f4f02a6953417",
+        "android_client_info": {
+          "package_name": "com.culture.cult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913869900470-e6goo5do5k9nbhc1ju7dc6d6cvfiro33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAznt_Px4Qs-IWLwyfoESqKDgwPYiCNppU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913869900470-e6goo5do5k9nbhc1ju7dc6d6cvfiro33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "913869900470-ng4m68qicgs44pdbgehk3h8oig2obmd0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.culture.cult"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
