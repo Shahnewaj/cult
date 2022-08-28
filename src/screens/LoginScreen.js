@@ -17,6 +17,9 @@ const LoginScreen = ({ navigation }) => {
     };
 
     const handleCreateAccount = () => {
+        if (!email || !password) {
+            return alert('One or more fields are required')
+        }
         setLoading(true);
         auth()
             .createUserWithEmailAndPassword(email, password)
@@ -32,12 +35,17 @@ const LoginScreen = ({ navigation }) => {
                 }
             })
             .finally(() => {
-                setLoading(false)
+                setLoading(false);
+                setEmail('');
+                setPassword('');
             })
     };
 
 
     const handleSignIn = () => {
+        if (!email || !password) {
+            return alert('One or more fields are required')
+        }
         setLoading(true);
         auth()
             .signInWithEmailAndPassword(email, password)
@@ -54,6 +62,8 @@ const LoginScreen = ({ navigation }) => {
             })
             .finally(() => {
                 setLoading(false)
+                setEmail('');
+                setPassword('')
             })
     };
 
@@ -64,10 +74,12 @@ const LoginScreen = ({ navigation }) => {
             <SafeAreaView>
                 <Input
                     placeholder="Enter Email"
+                    value={email}
                     onChangeText={value => setEmail(value)}
                 />
                 <Input
                     placeholder="Enter Password"
+                    value={password}
                     onChangeText={value => setPassword(value)}
                 />
                 {signIn &&
